@@ -1,0 +1,17 @@
+
+* GameState
+  :LOGBOOK:
+  CLOCK: [2013-02-09 Sat 02:12]--[2013-02-09 Sat 02:23] =>  0:11
+  :END:
+  :PROPERTIES:
+  :MKP_NAME: "GameState"
+  :MKP_BASEDIR: "~/GameState"
+  :MKP_SRC_PATTERNS: (".*\\.hs" ".*\\.lhs" ".*\\.cabal")
+  :MKP_ACK_ARGS: "--haskell"
+  :MKP_VCS:  darcs
+  :MKP_COMPILE_CMD: "ghc --make TestGame.hs && ./TestGame"
+  :MKP_PATTERNS_ARE_REGEX: t
+  :MKP_FRIENDS: nil
+  :END:
+** TODO replace ODE with Bullet
+** TODO colors are wrong, replace fixed function stuff with shader
