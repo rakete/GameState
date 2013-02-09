@@ -1,0 +1,74 @@
+name: GameState
+version: 0.1
+cabal-version: -any
+build-type: Simple
+license: AllRightsReserved
+license-file: None
+copyright: Andreas Raster
+maintainer: Andreas Raster
+build-depends: parsec -any, directory -any, hxt -any,
+               template-haskell -any, mtl -any, GLFW -any, haskell98 -any,
+               Imlib -any, array -any, containers -any, base -any, OpenGL -any
+stability:
+homepage: None
+package-url:
+synopsis: None
+description: None
+category: None
+author: Andreas Raster
+tested-with: GHC -any
+data-files:
+extra-source-files:
+extra-tmp-files:
+buildable: True
+build-tools:
+cpp-options:
+cc-options:
+ld-options:
+pkgconfig-depends:
+frameworks:
+c-sources:
+extensions:
+extra-libraries:
+extra-lib-dirs:
+includes:
+install-includes:
+include-dirs:
+hs-source-dirs: .
+other-modules:
+ghc-prof-options:
+ghc-shared-options:
+ghc-options:
+hugs-options:
+nhc98-options:
+jhc-options:
+exposed-modules: Utility.Tuple Utility.Apply Utility.List
+                 Utility.Image Utility.Map Utility.Monad Utility.Misc
+                 Engine.Primitives Engine.Geometry Engine.Texture Engine.Factory
+                 Engine.Game Math.Matrix Math.Metric Math.Vector Math.Quaternion
+                 Parser.ObjParser Parser.ColladaParser
+ 
+executable: TestGame
+main-is: TestGame.hs
+buildable: True
+build-tools:
+cpp-options:
+cc-options:
+ld-options:
+pkgconfig-depends:
+frameworks:
+c-sources:
+extensions:
+extra-libraries:
+extra-lib-dirs:
+includes:
+install-includes:
+include-dirs:
+hs-source-dirs: .
+other-modules:
+ghc-prof-options:
+ghc-shared-options:
+ghc-options:
+hugs-options:
+nhc98-options:
+jhc-options:
