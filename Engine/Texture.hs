@@ -98,7 +98,7 @@ uploadTexture image = do
     GL.textureWrapMode GL.Texture2D GL.S $= (GL.Repeated,GL.Repeat)
     GL.textureWrapMode GL.Texture2D GL.T $= (GL.Repeated,GL.Repeat)
     GL.textureFilter GL.Texture2D $= ((GL.Linear',Nothing),GL.Linear')
-    GL.texImage2D Nothing GL.NoProxy 0 GL.RGBA' (GL.TextureSize2D w h) 0 pdata
+    GL.texImage2D GL.Texture2D GL.NoProxy 0 GL.RGBA' (GL.TextureSize2D w h) 0 pdata
 
     return texid
 
